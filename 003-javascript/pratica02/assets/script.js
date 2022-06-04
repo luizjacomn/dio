@@ -4,8 +4,12 @@ var currentValue = 0;
 var inc = document.getElementsByName('adicionar')[0];
 var dec = document.getElementsByName('subtrair')[0];
 
-inc.addEventListener('click', (event) => {
+inc.addEventListener('click', () => {
     increment();
+});
+
+dec.addEventListener('click', () => {
+    decrement();
 });
 
 function increment() {
